@@ -43,7 +43,7 @@
 ## Some Notes
 <p>
 Below are some notes on execution times and feature edits to update performance and accuracy of the model. </br></br>
-Here are the local machine GPU training time in ( HH:MM:SS ) format:</br>
+Here are the local machine GPU (NVIDIA GeForce RTX 2080 Super) training time in ( HH:MM:SS ) format:</br>
 <ol>
 <li>Execution time: 00:02:20  for  100  iterations.</li>
 <li>Execution time: 00:04:37  for  500  iterations</li>
