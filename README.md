@@ -1,4 +1,4 @@
-# NLP training for Generatively Pretrained Transformer (GPT)
+# Training for Generatively Pretrained Transformer (GPT)
 
 <div id="top"></div>
 <div align="center">
