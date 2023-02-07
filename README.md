@@ -22,8 +22,6 @@
   </a>
 </div>
 
-## NLP training for Generatively Pretrained Transformer (GPT)
-
   <p align="center">
     A basic project to derrived from "Let's build GPT: from scratch, in code, spelled out." by Andrej Karpathy: (https://www.youtube.com/watch?v=kCc8FmEb1nY).
     <br />
@@ -51,7 +49,7 @@ Here are the local machine GPU training time in ( HH:MM:SS ) format:</br>
 <li>Execution time: 00:04:37  for  500  iterations</li>
 <li>Execution time: 00:07:42  for  1000  iterations</li>
 <li>Execution time: 00:38:34  for  5000  iterations</li>
-<li>Execution time: 01:11:50  for  10000  iterations</li>
+<li>Execution time: 01:17:35  for  10000  iterations</li>
 </ol>
 </p>
 </br>
