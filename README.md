@@ -36,7 +36,7 @@
 
 <!-- Notes -->
 ## Some Notes
-<p align="center">
+<p>
 Below are some notes on execution times and feature edits to update performance and accuracy of the model. </br></br>
 Below are some notes on local machine GPU training time in ( HH:MM:SS ) format:</br>
 <ol>
@@ -47,7 +47,8 @@ Below are some notes on local machine GPU training time in ( HH:MM:SS ) format:<
 <li>Execution time: 01:11:50  for  10000  iterations</li>
 </ol>
 </p>
-Some features to manipulate for performance testing are as follows. For in depth explanation see Mr. Karpathy's video on the effects of these values. </br>
+</br>
+Some features to manipulate for performance testing are as follows. For in depth explanation see Mr. Karpathy's video on the effects of these values. </br></br>
 <ol>
 <li>** More text training data **</li>
 <li>batch_size</li>
