@@ -80,9 +80,7 @@ Some features to manipulate for performance testing are as follows. For in depth
 Below are some basic enhancements that could be done to make this better.
 </p>
 <ol>
-<li>Functionality to Save the model.</li>
-<li>Functionality to Reload the saved model.</li>
-<li>Additional data added to the training text. <br/> I got the original text from (https://bigbangtrans.wordpress.com/) and included the (remove-line-that-begins-with.py) file to assist with data clean-up.</li>
+<li>Additional data added to the training text. <br/> I got the original script text from (https://bigbangtrans.wordpress.com/) and included the (remove-line-that-begins-with.py) file to assist with data clean-up.</li>
 </ol>
 
 
