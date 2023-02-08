@@ -5,9 +5,9 @@ Scripts scraped from https://bigbangtrans.wordpress.com/
 
 import re
 
-startFile = 'BBT-S1-S10.txt'
-updatedFile = 'BBT-S1-S10-Updated.txt'
-finalFile = 'BBT-S1-S10-Final.txt'
+startFile = 'yourfile.txt'
+updatedFile = 'yourfile-Combined-Next.txt'
+finalFile = 'yourfile-Combined-Final.txt'
 
 file1 = open(startFile,'r')
 
@@ -35,6 +35,8 @@ with open(updatedFile,"r") as f, open(finalFile,"w") as outfile:
 
 		if i:
 				h = re.sub("[\(\[].*?[\)\]]", "", i)
-				outfile.write(h)
+				k = re.sub(r'^.*?:', ':', h).replace(":","")
+				outfile.write(k)
+
  			
 
