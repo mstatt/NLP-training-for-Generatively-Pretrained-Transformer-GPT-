@@ -29,8 +29,7 @@
   <p align="center">
 
 Generative pre-trained transformer (GPT) is a family of language models generally trained on a large corpus of text data to generate human-like text. They are built using several blocks of the transformer architecture. They can be fine-tuned for various natural language processing tasks such as text generation, language translation, and text classification. The "pre-training" in its name refers to the initial training process on a large text corpus where the model learns to predict the next word in a passage, which provides a solid foundation for the model to perform well on downstream tasks with limited amounts of task-specific data.
-  
-       <br />
+
   </p>
 
 
