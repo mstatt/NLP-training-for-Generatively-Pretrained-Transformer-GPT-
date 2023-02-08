@@ -43,7 +43,7 @@ Generative pre-trained transformer (GPT) is a family of language models generall
 ## Some Notes
 <p>
 Below are some notes on execution times and feature edits to update performance and accuracy of the model. </br>
- I replaced the tiny shakespeare dataset with the currated Big Bang Theory season 1-8 transcript dataset.
+ I replaced the tiny shakespeare dataset with the SOAP (95 million) dataset. Located here( https://www.corpusdata.org/formats.asp )
 
 </br>
 Here are the local machine GPU (NVIDIA GeForce RTX 2080 Super) training time in ( HH:MM:SS ) format:</br>
@@ -80,7 +80,7 @@ Some features to manipulate for performance testing are as follows. For in depth
 Below are some basic enhancements that could be done to make this better.
 </p>
 <ol>
-<li>Additional data added to the training text. <br/> I got the original script text from (https://bigbangtrans.wordpress.com/) and included the (remove-line-that-begins-with.py) file to assist with data clean-up.</li>
+<li>Additional data added to the training text. <br/> Great text data resource (https://www.corpusdata.org/formats.asp) and I have included the (remove-line-that-begins-with.py) file to assist with data clean-up and formatting.</li>
 </ol>
 
 
