@@ -2,7 +2,7 @@
 import string, re
 
 # Set desired length of sentences 
-sentLength = 20
+sentLength = 50
 
 with open("soap-text.txt", "r") as fic:
     content = fic.read()
