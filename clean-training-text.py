@@ -100,14 +100,15 @@ def mergeTrainingFiles(tfile1,tfile2,nameEnd):
 
     return nameEnd+'-training-text-formatted.txt'
 
+
 file1 = cleanText(soapFile, "soap")
 file2 = cleanText(newsFile, "news")
 file3 = cleanText(newsFile, "tvm")
 file4 = cleanText(blogFile, "blog")
-file5 = cleanText(soapFile, "acad")
-file6 = cleanText(newsFile, "mag")
-file7 = cleanText(newsFile, "fic")
-file8 = cleanText(blogFile, "spok")
+file5 = cleanText(acadFile, "acad")
+file6 = cleanText(magFile, "mag")
+file7 = cleanText(ficFile, "fic")
+file8 = cleanText(spokFile, "spok")
 
 
 
