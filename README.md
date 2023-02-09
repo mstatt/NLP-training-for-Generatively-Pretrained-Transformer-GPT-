@@ -43,14 +43,12 @@ Generative pre-trained transformer (GPT) is a family of language models generall
 ## Some Notes
 <p>
 Below are some notes on execution times and feature edits to update performance and accuracy of the model. </br>
- I replaced the tiny shakespeare dataset with the SOAP and News dataset. Located here( https://www.corpusdata.org/formats.asp )
+ I replaced the tiny shakespeare dataset with the Coca dataset. Located here( https://www.corpusdata.org/formats.asp )
 
 </br>
-Here are the local machine GPU (NVIDIA GeForce RTX 2080 Super) training time in ( HH:MM:SS ) format:</br>
+Here are the local machine GPU (NVIDIA GeForce RTX 2080 Super) training times (training data set size and system specs could alter this substantially):</br>
 <ol>
 <li>Execution time: 00:02:20  for  100  iterations.</li>
-<li>Execution time: 00:04:37  for  500  iterations</li>
-<li>Execution time: 00:07:42  for  1000  iterations</li>
 <li>Execution time: 00:38:34  for  5000  iterations</li>
 <li>Execution time: 01:17:35  for  10000  iterations</li>
 </ol>

@@ -11,7 +11,7 @@ sentLength = 25
 
 soapFile = "data/soap-text.txt"
 newsFile = "data/news-text.txt"
-tvmFile = "tvm-text.txt"
+tvmFile = "data/tvm-text.txt"
 blogFile = "data/blog-text.txt"
 acadFile = "data/acad-text.txt"
 magFile = "data/mag-text.txt"
