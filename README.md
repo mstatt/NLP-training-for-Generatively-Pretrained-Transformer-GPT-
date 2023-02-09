@@ -43,7 +43,7 @@ Generative pre-trained transformer (GPT) is a family of language models generall
 ## Some Notes
 <p>
 Below are some notes on execution times and feature edits to update performance and accuracy of the model. </br>
- I replaced the tiny shakespeare dataset with the SOAP (95 million) dataset. Located here( https://www.corpusdata.org/formats.asp )
+ I replaced the tiny shakespeare dataset with the SOAP and News dataset. Located here( https://www.corpusdata.org/formats.asp )
 
 </br>
 Here are the local machine GPU (NVIDIA GeForce RTX 2080 Super) training time in ( HH:MM:SS ) format:</br>
@@ -80,7 +80,10 @@ Some features to manipulate for performance testing are as follows. For in depth
 Below are some basic enhancements that could be done to make this better.
 </p>
 <ol>
-<li>Additional data added to the training text. <br/> Great text data resource (https://www.corpusdata.org/formats.asp) and I have included the (split-file-on-period.py) file to assist with data clean-up and formatting.</li>
+<li>Additional data added to the training text. <br/> Great text data resource (https://www.corpusdata.org/formats.asp) and I have included the (clean-training-text.py) file to assist with data clean-up and formatting.</li>
+<li>The script cleans up stray chars and formates the files, then merges both the soap and the news text for a single clean larger corpus. With adjustable line length for better results when tuning the model.</li>
+<li>If you run the notebook and script (as is) or use the included (merged-final-training-text-formatted.txt  --unchanged) that will give you 17 million parameters to start.</li>
+
 </ol>
 
 
