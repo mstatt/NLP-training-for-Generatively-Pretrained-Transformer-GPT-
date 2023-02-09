@@ -80,7 +80,7 @@ Some features to manipulate for performance testing are as follows. For in depth
 Below are some basic enhancements that could be done to make this better.
 </p>
 <ol>
-<li>Additional data added to the training text. <br/> Great text data resource (https://www.corpusdata.org/formats.asp) and I have included the (remove-line-that-begins-with.py) file to assist with data clean-up and formatting.</li>
+<li>Additional data added to the training text. <br/> Great text data resource (https://www.corpusdata.org/formats.asp) and I have included the (split-file-on-period.py) file to assist with data clean-up and formatting.</li>
 </ol>
 
 
