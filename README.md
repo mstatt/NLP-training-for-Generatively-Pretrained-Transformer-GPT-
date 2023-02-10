@@ -51,6 +51,7 @@ Here are the local machine GPU (NVIDIA GeForce RTX 2080 Super) training times (t
 <li>Execution time: 00:02:20  for  100  iterations.</li>
 <li>Execution time: 00:38:34  for  5000  iterations</li>
 <li>Execution time: 01:17:35  for  10000  iterations</li>
+<li>Execution time: 06:15:33  for  30000  iterations</li>
 </ol>
 </p>
 </br>
