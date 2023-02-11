@@ -7,7 +7,7 @@ it will generate a file of 9 million words with a character count of over 55 mil
 import string, re, os
 
 # Set desired length of sentences 
-sentLength = 25
+sentLength = 20
 
 soapFile = "data/soap-text.txt"
 newsFile = "data/news-text.txt"
@@ -33,7 +33,9 @@ def cleanText(cleanFile, txtname):
             line = line.replace('""', '')
             line = line.replace("@", "")
             line = line.replace("<p>", "")
+            line = line.replace("</p>", "")
             line = line.replace("<h>", "")
+            line = line.replace("</h>", "")
             line = line.replace("!", "")
             line = line.replace("?", "")
             line = line.replace("-", "")
