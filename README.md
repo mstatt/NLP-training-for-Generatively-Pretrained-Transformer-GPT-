@@ -77,10 +77,12 @@ If you want to run a reloaded model. Please see the process below: </br>
 <li>Run the Generate text from the (GPT) model cell.</li>
 <li>**** All of the models provided here were trained with the same params and data file, </br>the only thing I changed was the number of iterations. ****</li>
 </ol>
-Model flow diagram.
-
-
+</br></br>
 :-------------------------:|
+Model flow diagram.
+:-------------------------:|
+
+
 ![A1]
 
 
