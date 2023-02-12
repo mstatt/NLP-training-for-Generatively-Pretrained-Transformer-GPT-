@@ -125,9 +125,10 @@ partD = mergeTrainingFiles(file7,file8,'partD')
 partialA = mergeTrainingFiles(partA,partB,'merged-partialA')
 partialB = mergeTrainingFiles(partC,partD,'merged-partialB')
 #Final merge with sentence length prepended to the name
-finalPar = mergeTrainingFiles(partialA,partialB,str(sentLength)+'-merged-final')
+final = mergeTrainingFiles(partialA,partialB,str(sentLength)+'-merged-final')
 
 # Delete all unmecessary files to avoid conflicts.
+
 os.remove(file1)
 os.remove(file2)
 os.remove(file3)
@@ -142,5 +143,7 @@ os.remove(partC)
 os.remove(partD)
 os.remove(partialA)
 os.remove(partialB)
-
-cleanText(finalPar, "final")
+# One final pass for clean up.
+cleanText(final, str(sentLength)+'-final')
+# Delete the last file
+os.remove(final)
