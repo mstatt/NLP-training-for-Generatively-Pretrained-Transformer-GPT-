@@ -7,7 +7,7 @@ it will generate a file of 9 million words with a character count of over 55 mil
 import string, re, os
 
 # Set desired length of sentences 
-sentLength = 20
+sentLength = 25
 
 soapFile = "data/soap-text.txt"
 newsFile = "data/news-text.txt"
@@ -17,6 +17,7 @@ acadFile = "data/acad-text.txt"
 magFile = "data/mag-text.txt"
 ficFile = "data/fic-text.txt"
 spokFile = "data/spok-text.txt"
+
 
 def cleanText(cleanFile, txtname):
     """
@@ -29,6 +30,7 @@ def cleanText(cleanFile, txtname):
 
         file2 = open(txtname+"-training-text-formatted.txt",'w')
         for line in sentences:
+            line = line.lstrip()
             line = line.replace("  ", " ")
             line = line.replace('""', '')
             line = line.replace("@", "")
@@ -102,10 +104,9 @@ def mergeTrainingFiles(tfile1,tfile2,nameEnd):
 
     return nameEnd+'-training-text-formatted.txt'
 
-
 file1 = cleanText(soapFile, "soap")
 file2 = cleanText(newsFile, "news")
-file3 = cleanText(newsFile, "tvm")
+file3 = cleanText(tvmFile, "tvm")
 file4 = cleanText(blogFile, "blog")
 file5 = cleanText(acadFile, "acad")
 file6 = cleanText(magFile, "mag")
@@ -123,9 +124,10 @@ partD = mergeTrainingFiles(file7,file8,'partD')
 # Tirteary merge
 partialA = mergeTrainingFiles(partA,partB,'merged-partialA')
 partialB = mergeTrainingFiles(partC,partD,'merged-partialB')
-#Final merge
-final = mergeTrainingFiles(partialA,partialB,'merged-final')
-    # Delete both files to avoid conflicts
+#Final merge with sentence length prepended to the name
+finalPar = mergeTrainingFiles(partialA,partialB,str(sentLength)+'-merged-final')
+
+# Delete all unmecessary files to avoid conflicts.
 os.remove(file1)
 os.remove(file2)
 os.remove(file3)
@@ -140,3 +142,5 @@ os.remove(partC)
 os.remove(partD)
 os.remove(partialA)
 os.remove(partialB)
+
+cleanText(finalPar, "final")

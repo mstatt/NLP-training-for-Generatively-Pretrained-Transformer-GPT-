@@ -25,6 +25,7 @@
   <p align="center">
     A basic project to derrived from "Let's build GPT: from scratch, in code, spelled out." by Andrej Karpathy: (https://www.youtube.com/watch?v=kCc8FmEb1nY).
     <br />
+    Keep in mind this is a substantially smaller version that the popular model deployed by OpenAI.
 </p>
   <p align="center">
 
@@ -72,15 +73,16 @@ If you want to run a reloaded model. Please see the process below: </br>
 <ol>
 <li>Run the imports Cell to ensure all of the libraries are loaded</li>
 <li>Execute Steps 1-5 prior to loading the model or testing the output.</li>
-<li>Ensure that the same data file used for training ther model is loaded.</li>
-<li>Load the specific model you want by name.</li>
+<li>Ensure that the same data file used for training the model is loaded.</li>
+<li>Specifically the same text training data file with the same sentence length as the one used for training.</li>
+<li>Load the specific model you want from the directory.</li>
 <li>Run the Generate text from the (GPT) model cell.</li>
 <li>**** All of the models provided here were trained with the same params and data file, </br>the only thing I changed was the number of iterations. ****</li>
 </ol>
 </br></br>
-:-------------------------:|
+|:-------------------------
 Model flow diagram.
-:-------------------------:|
+ -------------------------:|
 
 
 ![A1]
