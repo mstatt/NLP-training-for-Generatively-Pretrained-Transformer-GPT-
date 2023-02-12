@@ -49,10 +49,10 @@ Below are some notes on execution times and feature edits to update performance 
 </p>
 Here are the local machine GPU (NVIDIA GeForce RTX 2080 Super) training times for >19 Million parameters, (training data set size and system specs could alter this substantially):</br>
 <ol>
-<li>Execution time: 00:09:39 for 1,000  iterations.</li>
-<li>Execution time: 01:10:10 for 5,000  iterations</li>
-<li>Execution time: 05:50:37 for 25,000  iterations</li>
-<li>Execution time: 12:09:20 for 50,000  iterations</li>
+<li>Execution time: 00:14:07 with train loss 1.7403 for 1,000  iterations.</li>
+<li>Execution time: 01:10:10 with train loss 1.2851 for 5,000  iterations</li>
+<li>Execution time: 05:50:37 with train loss 1.1128 for 25,000  iterations</li>
+<li>Execution time: 12:09:20 with train loss 1.0603 for 50,000  iterations</li>
 
 
 </ol>
