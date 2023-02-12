@@ -7,7 +7,7 @@ it will generate a file of 9 million words with a character count of over 55 mil
 import string, re, os
 
 # Set desired length of sentences 
-sentLength = 20
+sentLength = 30
 
 soapFile = "data/soap-text.txt"
 newsFile = "data/news-text.txt"
