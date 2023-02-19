@@ -87,7 +87,25 @@ Model flow diagram.
 
 ![A1]
 
+</p>
+Generated text output progress from each trained model (Set at 100 max tokens):</br>
+<ol>
+<li>5K itreation model:<br/>
+pplan report from the singer allows some of his box teams.
+Competitions They was challenged by delid
+</li>
+<li>25K itreation model:<br/>
+average two flashment fresh for more potential over the medical program in such adults.
+Meryel Josep
+</li>
+<li>50K itreation model:<br/>
+cold, number, meat.
+Champagna What do you guys get Your Blesser is sweaty.
+I believe this can tyour
+</li>
 
+
+</ol>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
