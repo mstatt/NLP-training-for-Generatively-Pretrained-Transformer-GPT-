@@ -47,17 +47,17 @@ Below are some notes on execution times and feature edits to update performance 
  I replaced the tiny shakespeare dataset with the Coca dataset. Located here( https://www.corpusdata.org/formats.asp )
 </br>
 </p>
-Here are the local machine GPU (NVIDIA GeForce RTX 2080 Super) training times for >19 Million parameters, (training data set size and system specs could alter this substantially):</br>
+Here are the local machine GPU (NVIDIA GeForce RTX 2080 Super) training times (HH:MM:SS) for >19 Million parameters, (training data set size and system specs could alter this substantially):</br>
 <ol>
-<li>Execution time: 00:14:07 with train loss 1.7403 for 1,000  iterations.</li>
-<li>Execution time: 01:10:10 with train loss 1.2851 for 5,000  iterations</li>
-<li>Execution time: 05:50:37 with train loss 1.1128 for 25,000  iterations</li>
-<li>Execution time: 12:09:20 with train loss 1.0603 for 50,000  iterations</li>
-
-
+<li>Execution time: 02:19:39 with train loss 1.1989 for 10,000 iterations.</li>
+<li>Execution time: 04:38:59 with train loss 1.1322 for 20,000 iterations</li>
+<li>Execution time: 09:42:38 with train loss 1.0754 for 40,000 iterations</li>
+<li>Execution time: 26:36:56 with train loss 1.0281 for 80,000 iterations</li>
+<li>Execution time: 51:18:39 with train loss 0.9833 for 160,000 iterations</li>
 </ol>
 
-</br></br></br>
+
+</br></br>
 Some features to manipulate for performance testing are as follows. For in depth explanation see Mr. Karpathy's video on the effects of these values. </br>
 <ol>
 <li>** More text training data **</li>
@@ -71,13 +71,13 @@ Some features to manipulate for performance testing are as follows. For in depth
 </br></br></br>
 If you want to run a reloaded model. Please see the process below: </br>
 <ol>
-<li>Run the imports Cell to ensure all of the libraries are loaded</li>
+<li>Run the imports Cell to ensure all of the libraries are loaded.</li>
 <li>Execute Steps 1-5 prior to loading the model or testing the output.</li>
 <li>Ensure that the same data file used for training the model is loaded.</li>
 <li>Specifically the same text training data file with the same sentence length as the one used for training.</li>
 <li>Load the specific model you want from the directory.</li>
 <li>Run the Generate text from the (GPT) model cell.</li>
-<li>**** All of the models provided here were trained with the same params and data file, </br>the only thing I changed was the number of iterations. ****</li>
+<li>**** All of the models provided here were trained with the same params and data file, </br>the only difference is the number of iterations. ****</li>
 </ol>
 </br></br>
 |:-------------------------
@@ -106,6 +106,23 @@ I believe this can tyour
 
 
 </ol>
+
+</br></br>
+
+Batch: ** Batch Size is the number of training examples used by one GPU in one training step.
+</br></br>
+Block: ** a block consists of a multi-head attention layer and a position-wise 2-layer feed-forward network, intertwined with residual connections and layer-normalization.
+</br></br>
+Heads: ** When you have several heads per layer the heads are independent of each other. This means that the model can learn different patterns with each head.
+</br></br>
+Training Loss: ** The smaller the training loss, the better a job the classifier is at modeling the relationship between the input data and the output targets.
+</br></br>
+
+
+
+
+
+</br></br>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
